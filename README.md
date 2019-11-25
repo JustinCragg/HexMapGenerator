@@ -1,0 +1,2 @@
+# HexMapGenerator
+Continuing my new found fascination for map generation after the King Chaser game, I had a go at making a civ-style hexagon map generator. The generator takes into consideration the distance from the equator, rainfall, temperature and erosion. It generates rivers and biomes including; mountains, forests, swamps, tundra and more. The generator is heavily based on a breakdown of Civilization 1's map generation by darkpanda.
