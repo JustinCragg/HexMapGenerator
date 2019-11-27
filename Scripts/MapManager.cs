@@ -149,7 +149,6 @@ public class MapManager : MonoBehaviour {
                 }
             }
         }
-
         // Temperature Adjustments
         for (int x = 0; x < length; x++) {
             for (int y = 0; y < width; y++) {
@@ -439,6 +438,11 @@ public class MapManager : MonoBehaviour {
     }
 
     void tileCreation() {
+        foreach (List<Tile> tiles in mapTiles) {
+            foreach (Tile tile in tiles) {
+                Destroy(tile.gameObject);
+            }
+        }
         mapTiles.Clear();
         for (int x = 0; x < length; x++) {
             mapTiles.Add(new List<Tile>());

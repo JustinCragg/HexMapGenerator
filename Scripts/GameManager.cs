@@ -10,4 +10,10 @@ public class GameManager : MonoBehaviour {
         mapManager = GameObject.FindGameObjectWithTag("MapManager").GetComponent<MapManager>();
         mapManager.generateMap();
 	}
+
+    void Update() {
+        if (Input.GetKeyUp(KeyCode.Return)) {
+            mapManager.generateMap();
+        }
+    }
 }
